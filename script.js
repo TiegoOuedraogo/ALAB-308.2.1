@@ -78,19 +78,19 @@ becomes
 2 {id: "63", name: "Blaine", occupation: "Quiz Master", age: "58"}
 3 {id: "98", name: "Bill", occupation: "Doctor’s Assistant", age: "26"}
 */
-// let lines = csvString.split('\n');
-// //using const map1 = array1.map((x) => x * 2);
-// let header = lines[0].split(',');
-// let result = [];
-// for(let i =1; i<lines.length;i++){
-//     let values = lines[i].split(',');
-//     let dataObj ={}
-// for(let j=0; j< header.length;j++){
-//     dataObj[header[j]]= values[j];
-// }    
-//     result.push(dataObj)
-// }
-// console.log(result);
+let lines = csvString.split('\n');
+//using const map1 = array1.map((x) => x * 2);
+let header = lines[0].split(',');
+let result = [];
+for(let i =1; i<lines.length;i++){
+    let values = lines[i].split(',');
+    let dataObj ={}
+for(let j=0; j< header.length;j++){
+    dataObj[header[j]]= values[j];
+}    
+    result.push(dataObj)
+}
+console.log(result);
 
 /**Part4
  * Part 4: Sorting and Manipulating Data
